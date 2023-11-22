@@ -226,7 +226,7 @@ def finetune(model, ads_path):
     )
     # Training
     trainer.train()
-    trainer.save_model('model')  # Saves the tokenizer too
+    trainer.save_model()  # Saves the tokenizer too
     return model, tokenizer
 
 def main(ads_path, cds_path, if_freeze):
@@ -238,8 +238,8 @@ def main(ads_path, cds_path, if_freeze):
         second_path = ads_path
 
     rep = 0
-    # path_out = '/scratch/pbsjobs/axy327/' + str(rep)
-    path_out = '/tmp/pbsjobs/axy327/'+str(rep)
+    path_out = '/scratch/pbsjobs/axy327/' + str(rep)
+    # path_out = '/tmp/pbsjobs/axy327/'+str(rep)
 
     print(f'replication={rep}')
 
