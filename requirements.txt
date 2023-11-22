@@ -11,9 +11,6 @@ cfgv==3.3.1
 charset-normalizer 
 click==8.0.4
 colorama 
-# conda==4.12.0
-# conda-content-trust 
-# conda-package-handling 
 contourpy==1.0.5
 cryptography 
 cycler==0.11.0
@@ -62,7 +59,6 @@ PyYAML==6.0
 regex==2022.9.13
 requests 
 responses==0.18.0
-# ruamel-yaml-conda 
 ruamel.yaml==0.17.21
 ruamel.yaml.clib
 scikit-learn==1.1.3
