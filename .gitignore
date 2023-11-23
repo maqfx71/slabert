@@ -2,3 +2,4 @@ oscar.eo.txt-full
 wandb/
 .venv/
 model/
+upload_model.py
