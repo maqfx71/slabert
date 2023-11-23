@@ -3,4 +3,3 @@ wandb/
 .venv/
 model/
 upload_model.py
-slabert_haggingface.py
