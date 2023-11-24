@@ -14,7 +14,10 @@ from transformers import AutoTokenizer, AutoModelForMaskedLM
 
 tokenizer = AutoTokenizer.from_pretrained("Aqureshi71/slabert")
 model = AutoModelForMaskedLM.from_pretrained("Aqureshi71/slabert")
-model = model.cuda()  # モデルをGPUに移動 ここのエラー処理必要かも
+# model = model.cuda()  # モデルをGPUに移動 ここのエラー処理必要かも
+device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+model = model.to(device)
+
 
 import numpy as np
 import torch
