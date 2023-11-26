@@ -11,6 +11,7 @@ Original file is located at
 
 # Load model directly
 from transformers import AutoTokenizer, AutoModelForMaskedLM
+import torch
 
 tokenizer = AutoTokenizer.from_pretrained("Aqureshi71/slabert")
 model = AutoModelForMaskedLM.from_pretrained("Aqureshi71/slabert")
