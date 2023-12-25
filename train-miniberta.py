@@ -129,7 +129,8 @@ def freeze(model):
 
 def finetune(model, ads_path):
     rep = 0
-    path_out = '/scratch/pbsjobs/axy327/finetune/' + str(rep)
+    # path_out = '/scratch/pbsjobs/axy327/finetune/' + str(rep)
+    path_out = '/tmp/pbsjobs/axy327/finetune/'+str(rep)
 
     print(f'replication={rep}')
 
@@ -238,8 +239,8 @@ def main(ads_path, cds_path, if_freeze):
         second_path = ads_path
 
     rep = 0
-    path_out = '/scratch/pbsjobs/axy327/' + str(rep)
-    # path_out = '/tmp/pbsjobs/axy327/'+str(rep)
+    # path_out = '/scratch/pbsjobs/axy327/' + str(rep)
+    path_out = '/tmp/pbsjobs/axy327/'+str(rep)
 
     print(f'replication={rep}')
 
